@@ -22,7 +22,14 @@ public class PrimeGenerator extends Thread {
             if (this.isPrime(number)) {
                 System.out.printf("Number %d is Prime\n", number);
             }
-
+            
+            /*
+             * There is an important difference between the isInterrupted() and
+             * the interrupted() methods. The first one doesn't change the value
+             * of the interrupted attribute, but the second one sets it to false. As
+             * the interrupted() method is a static method, the utilization of the
+             * isInterrupted() method is recommended.
+             */
             if (this.isInterrupted()) {
                 System.out.println("The Prime Generator has been Interrumped");
                 return;

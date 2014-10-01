@@ -19,7 +19,7 @@ public class MainRecipe02 {
      * @param args
      */
     public static void main(String[] args) {
-        Thread[] threads = new Thread[10];
+        Thread[] threads = new Thread[100000];
         Thread.State[] status = new Thread.State[threads.length];
 
         for (int i = 0; i < threads.length; i++) {
