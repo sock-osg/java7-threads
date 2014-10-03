@@ -6,7 +6,7 @@ package com.oz.java7.threads.ch1;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 
+ * Grouping threads into a group.
  * @author <a href="mailto:sock.sqt@gmail.com">Samuel Quintana</a>
  * @since Oct 2, 2014, 2:17:39 PM
  */

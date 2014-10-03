@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * Creating and running a thread.
+ * Creating and running a daemon thread.
  * @author <a href="mailto:sock.sqt@gmail.com">Samuel Quintana</a>
  * @since Oct 1, 2014, 1:36:54 PM
  */

@@ -6,7 +6,7 @@ package com.oz.java7.threads.ch1;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 
+ * Using local thread variables - Safe
  * @author <a href="mailto:sock.sqt@gmail.com">Samuel Quintana</a>
  * @since Oct 1, 2014, 5:02:32 PM
  */
