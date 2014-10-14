@@ -16,6 +16,12 @@ public class PrintQueue {
 
     public void printJob(Object document) {
         this.queueLock.lock();
+        /*
+         * The biggest difference with the lock() method is that this method, if the thread that uses it can't get the control of
+         * the Lock interface, returns immediately and doesn't put the thread to sleep. This method returns a boolean value,
+         * true if the thread gets the control of the lock, and false if not.
+         */
+        //this.queueLock.tryLock();
 
         try {
             Long duration = (long) (Math.random() * 10000);

@@ -7,7 +7,7 @@ import com.oz.java7.threads.ch2.utils.Job;
 import com.oz.java7.threads.ch2.utils.PrintQueue;
 
 /**
- * 
+ * Synchronizing a block of code with a Lock
  * @author <a href="mailto:sock.sqt@gmail.com">Samuel Quintana</a>
  * @since Oct 13, 2014, 4:18:40 PM
  */
