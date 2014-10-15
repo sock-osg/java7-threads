@@ -6,7 +6,6 @@ package com.oz.java7.threads.ch3.utils;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * 
  * @author <a href="mailto:sock.sqt@gmail.com">Samuel Quintana</a>
  * @since Oct 15, 2014, 1:03:41 PM
  */
@@ -19,6 +18,13 @@ public class Videoconference implements Runnable {
      */
     public Videoconference(int number) {
         super();
+        /*
+         * There's no way to re-initialize the internal counter of the CountDownLatch object or to modify
+         * its value. Once the counter is initialized, the only method you can use to modify its value is
+         * the countDown() method explained earlier. When the counter arrives to 0, all the calls to the
+         * await() method return immediately and all subsequent calls to the countDown() method
+         * have no effect.
+         */
         this.controller = new CountDownLatch(number);
     }
 
